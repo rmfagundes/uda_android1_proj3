@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/QuestionStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/QuestionNumberStyle"
+                android:text="1" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_1" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_q1_new_england"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_new_england" />
+
+            <RadioButton
+                android:id="@+id/radio_q1_atlanta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_atlanta" />
+
+            <RadioButton
+                android:id="@+id/radio_q1_washington"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_washington" />
+
+            <RadioButton
+                android:id="@+id/radio_q1_houston"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_houston" />
+
+            <RadioButton
+                android:id="@+id/radio_q1_new_york"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_ny" />
+        </RadioGroup>
+
+        <LinearLayout style="@style/QuestionSeparatorStyle"></LinearLayout>
+
+        <LinearLayout
+            style="@style/QuestionStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/QuestionNumberStyle"
+                android:text="2" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_2" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/response_q2_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:hint="Type the attraction's name"
+            android:inputType="textCapWords" />
+
+        <LinearLayout style="@style/QuestionSeparatorStyle"></LinearLayout>
+
+        <LinearLayout
+            style="@style/QuestionStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/QuestionNumberStyle"
+                android:text="3" />
+
+            <Switch
+                android:id="@+id/response_q3_switch"
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_3"
+                android:textOff="No"
+                android:textOn="Yes" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/QuestionSeparatorStyle"></LinearLayout>
+
+        <LinearLayout
+            style="@style/QuestionStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/QuestionNumberStyle"
+                android:text="4" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_4" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/check_q4_alex_mack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/check_atl_alex_mack" />
+
+        <CheckBox
+            android:id="@+id/check_q4_jacob_tamme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/check_atl_jacob_tamme" />
+
+        <CheckBox
+            android:id="@+id/check_q4_ron_gronkowsky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/check_ne_ron_gronkowsky" />
+
+        <CheckBox
+            android:id="@+id/check_q4_tom_brady"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/check_ne_tom_brady" />
+
+        <LinearLayout style="@style/QuestionSeparatorStyle"></LinearLayout>
+
+        <LinearLayout
+            style="@style/QuestionStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/QuestionNumberStyle"
+                android:text="5" />
+
+            <TextView
+                style="@style/QuestionTextStyle"
+                android:text="@string/question_5" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/response_q5_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:hint="00"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="checkAnswers"
+            android:text="@string/button_submit" />
+
+    </LinearLayout>
+
+</ScrollView>
